@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     link: {
       isInternalLink: false,
-      href: 'https://github.com/vlopes4'
+      href: '/showcase'
     },
     data: {
       title: 'Forja de Soluções',

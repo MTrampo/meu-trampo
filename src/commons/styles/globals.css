@@ -144,6 +144,12 @@ h1, h2, h3, h4, h5, h6 {
   animation: var(--tw-animate-float, float 3s infinite);
 }
 
+.animate-color { 
+  animation-fill-mode: backwards;
+  filter: brightness(0) invert(1);
+  animation: color-cycle 15s ease-in-out infinite;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -164,11 +170,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes ticker-move {
+@keyframes color-cycle {
   0% {
-    transform: translateX(0);
+    filter: brightness(0) invert(1); 
   }
-  100% {
-    transform: translateX(-50%);
+  2%, 18% {
+    filter: none;
+  }
+  20%, 100% {
+    filter: brightness(0) invert(1);
   }
 }
