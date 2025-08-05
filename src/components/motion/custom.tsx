@@ -1,17 +1,19 @@
 "use client"
 
-import { ReactNode, Ref } from "react"
+import { ReactNode, ForwardedRef, forwardRef } from "react"
 import { MotionStyle, Transition, Variants, motion } from "motion/react"
 
 type MotionProps = {
   variants?: Variants
   transition?: Transition
   style?: MotionStyle
-  ref?: Ref<HTMLDivElement>
   children: ReactNode
 }
 
-export default function DivCustom ({ variants, transition, style, ref, children }: MotionProps) {
+const DivCustomComponent = (
+  { variants, transition, style, children }: MotionProps,
+  ref: ForwardedRef<HTMLDivElement>
+) => {
   return (
     <motion.div
       className="relative"
@@ -27,3 +29,5 @@ export default function DivCustom ({ variants, transition, style, ref, children 
     </motion.div>
   )
 }
+
+export default forwardRef(DivCustomComponent)

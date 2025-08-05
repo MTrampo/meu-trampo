@@ -1,4 +1,4 @@
-import { forwardRef, ReactNode } from "react";
+import { forwardRef, ReactNode, ForwardedRef } from "react";
 import * as motion from "motion/react-client";
 import { fadeInUp, fadeInUpDelay, textFadeInUp, textFadeInUpDelay } from "@/commons/lib/animations/variants";
 import { HTMLMotionProps } from "motion/react";
@@ -12,7 +12,7 @@ type CustomProps = {
 type SpanProps = CustomProps & HTMLMotionProps<"span">;
 
 export const SpanFadeInUp = forwardRef<HTMLSpanElement, SpanProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: SpanProps, ref: ForwardedRef<HTMLSpanElement>) => {
     return (
       <motion.span
         ref={ref}
@@ -32,7 +32,7 @@ export const SpanFadeInUp = forwardRef<HTMLSpanElement, SpanProps>(
 SpanFadeInUp.displayName = "SpanFadeInUp";
 
 export const SpanFadeInUpDelay = forwardRef<HTMLSpanElement, SpanProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: SpanProps, ref: ForwardedRef<HTMLSpanElement>) => {
     return (
       <motion.span
         ref={ref}
@@ -54,7 +54,7 @@ SpanFadeInUpDelay.displayName = "SpanFadeInUpDelay";
 type HeadingProps = CustomProps & HTMLMotionProps<"h2">;
 
 export const HeadingFadeInUp = forwardRef<HTMLHeadingElement, HeadingProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: HeadingProps, ref: ForwardedRef<HTMLHeadingElement>) => {
     return (
       <motion.h2
         ref={ref}
@@ -74,7 +74,7 @@ export const HeadingFadeInUp = forwardRef<HTMLHeadingElement, HeadingProps>(
 HeadingFadeInUp.displayName = "HeadingFadeInUp";
 
 export const HeadingFadeInLeft = forwardRef<HTMLHeadingElement, HeadingProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: HeadingProps, ref: ForwardedRef<HTMLHeadingElement>) => {
     return (
       <motion.h2
         ref={ref}
@@ -108,7 +108,7 @@ HeadingFadeInLeft.displayName = "HeadingFadeInLeft";
 type ParagraphProps = CustomProps & HTMLMotionProps<"p">;
 
 export const ParagraphFadeInUp = forwardRef<HTMLParagraphElement, ParagraphProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: ParagraphProps, ref: ForwardedRef<HTMLParagraphElement>) => {
     return (
       <motion.p
         ref={ref}
@@ -128,7 +128,7 @@ export const ParagraphFadeInUp = forwardRef<HTMLParagraphElement, ParagraphProps
 ParagraphFadeInUp.displayName = "ParagraphFadeInUp";
 
 export const ParagraphFadeInLeft = forwardRef<HTMLParagraphElement, ParagraphProps>(
-  ({ children, ...rest }, ref) => {
+  ({ children, ...rest }: ParagraphProps, ref: ForwardedRef<HTMLParagraphElement>) => {
     return (
       <motion.p
         ref={ref}
