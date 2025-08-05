@@ -33,14 +33,14 @@ export default function ShowCase() {
             bg-gradient-to-br from-pink-600 to-violet-600
             rounded-full filter blur-3xl opacity-50 pointer-events-none z-0"/>
 
-          <DivFadeInUp className="bg-[url('/images/showcase-hero.png')] bg-contain bg-no-repeat bg-center w-full h-80 sm:h-96 md:h-[400px] lg:h-[700px] relative z-10"/>
+          <div className="bg-[url('/images/showcase-hero.png')] bg-contain bg-no-repeat bg-center w-full h-80 sm:h-96 md:h-[400px] lg:h-[700px] relative z-10"/>
         </div>
         
       </section>
       <main className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-20">
-          {cases.map(show => (
-            <ShowCaseCard key={show.id} data={show}/>
+          {cases.map((show, i) => (
+            <ShowCaseCard key={show.id} data={show} animationIndex={i}/>
           ))}
         </div>
       </main>

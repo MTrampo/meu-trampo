@@ -18,12 +18,12 @@ export function Navigation() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationTriggerStyle()}>
-            <Link href="/showcase">Portifólio</Link>
+            <Link href="/showcase">Soluções</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationTriggerStyle()}>
-            <Link href="/">Soluções</Link>
+            <Link href="/core">Núcleo</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 

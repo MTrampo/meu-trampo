@@ -16,7 +16,7 @@ export const products = [
     id: 2,
     link: {
       isInternalLink: true,
-      href: '/'
+      href: '/core'
     },
     data: {
       title: 'Núcleo de Potência',

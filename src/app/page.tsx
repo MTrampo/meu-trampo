@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           <div className="w-full flex justify-center md:justify-end relative z-10">
-            <DivFadeInUp delay={0.5} className="
+            <DivFadeInUp delay={1} className="
               absolute
               top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
               w-[350px] h-[350px] 
