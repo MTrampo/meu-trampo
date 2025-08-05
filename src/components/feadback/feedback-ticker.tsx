@@ -82,6 +82,7 @@ export default function FeedbackTicker ({ speed = 60, direction = 'left' }: Feed
               avatarSrc={feedback.avatarSrc}
               avatarFallback={feedback.avatarFallback}
               rating={feedback.rating}
+              animationIndex={index}
             />
           </div>
         ))}
@@ -93,6 +94,7 @@ export default function FeedbackTicker ({ speed = 60, direction = 'left' }: Feed
               avatarSrc={feedback.avatarSrc}
               avatarFallback={feedback.avatarFallback}
               rating={feedback.rating}
+              animationIndex={index}
             />
           </div>
         ))}
