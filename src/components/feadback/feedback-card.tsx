@@ -18,7 +18,7 @@ export default function FeedbackCard({ text, author, avatarSrc, avatarFallback, 
   const animationDelay = 0.1 + (animationIndex * 0.15)
 
   return (
-    <DivFadeInUp delay={animationDelay} amount={0} className={`relative flex flex-col border rounded-lg bg-slate-50 dark:bg-linear-to-br dark:from-slate-900 dark:to-gray-950 ${colSpan}`}>   
+    <DivFadeInUp delay={animationDelay} className={`relative flex flex-col border rounded-lg bg-slate-50 dark:bg-linear-to-br dark:from-slate-900 dark:to-gray-950 ${colSpan}`}>   
       <div className="left-1/2 top-0 w-[150px] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2 opacity-70 bg-linear-to-r from-slate-500 to-gray-500 " />
       <div className="flex flex-col gap-6 p-6">
         <p className="text-justify dark:text-gray-400 text-sm whitespace-normal">

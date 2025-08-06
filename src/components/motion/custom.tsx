@@ -1,7 +1,6 @@
-"use client"
-
+import * as motion from "motion/react-client";
 import { ReactNode, ForwardedRef, forwardRef } from "react"
-import { MotionStyle, Transition, Variants, motion } from "motion/react"
+import { MotionStyle, Transition, Variants } from "motion/react"
 
 type MotionProps = {
   variants?: Variants

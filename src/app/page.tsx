@@ -32,14 +32,14 @@ export default function Home() {
           </div>
 
           <div className="w-full flex flex-col justify-center md:justify-end relative z-10">
-            <div className="
+            <DivFadeInUp delay={1} className="
               absolute
-              top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+              top-1/3 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
               w-[150px] h-[150px] md:w-[350px] md:h-[350px] 
-              bg-gradient-to-r from-blue-300 to-cyan-300
+              bg-gradient-to-r from-blue-300 to-cyan-300 dark:from-blue-500 dark:to-cyan-500
               rounded-full filter blur-3xl opacity-50 pointer-events-none z-0"/>
 
-            <div className="bg-[url('/images/home-hero.png')] animate-float bg-contain bg-no-repeat bg-center w-full h-80 sm:h-96 md:h-[400px] lg:h-[700px] relative z-10"/>
+            <DivFadeInUp className="bg-[url('/images/home-hero.png')] animate-float bg-contain bg-no-repeat bg-center w-full h-80 sm:h-96 md:h-[400px] lg:h-[700px] relative z-10"/>
             <div className="flex md:hidden justify-center items-center gap-4 lg:mr-8 mt-7">
               <p className="text-lg text-center text-gray-500">
                 Meu Trampo chegou para facilitar o seu trampo. Deixe o trabalho manual para trás

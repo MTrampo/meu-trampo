@@ -1,10 +1,7 @@
-'use client'
-
 import { forwardRef, ReactNode, ForwardedRef } from "react";
 import * as motion from "motion/react-client";
 import { fadeInUp, fadeInUpDelay, textFadeInUp, textFadeInUpDelay } from "@/commons/lib/animations/variants";
 import { HTMLMotionProps } from "motion/react";
-import { useWindowSize } from "@/hooks/window";
 
 type CustomProps = {
   delay?: number
@@ -132,8 +129,6 @@ ParagraphFadeInUp.displayName = "ParagraphFadeInUp";
 
 export const ParagraphFadeInLeft = forwardRef<HTMLParagraphElement, ParagraphProps>(
   ({ children, ...rest }: ParagraphProps, ref: ForwardedRef<HTMLParagraphElement>) => {
-    const { isMobile } = useWindowSize()
-
     return (
       <motion.p
         ref={ref}
@@ -154,7 +149,7 @@ export const ParagraphFadeInLeft = forwardRef<HTMLParagraphElement, ParagraphPro
             },
           },
         }}
-        viewport={{ once: true, amount: isMobile ? 0 : 'all' }}
+        viewport={{ once: true, amount: 0 }}
         {...rest}
       >
         {children}
