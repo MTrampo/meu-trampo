@@ -35,10 +35,10 @@ export const feedbacks = [
     rating: 5,
   },
   {
-    text: "Investimento que realmente vale a pena!",
-    author: "Rafael Fulanetti",
-    avatarSrc: "https://instagram.fcgh4-2.fna.fbcdn.net/v/t51.2885-19/434360320_777621480632495_7449348670392895222_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43NDkuYzIifQ&_nc_ht=instagram.fcgh4-2.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QEFjSDLXnvgiY3SucPBd3n53kGv8C8p5XZoZ8xhPLTqrdLjvHId0K1GaM-IVxvRnQ9pReOpDtG1YO0iQ4a8_SjK&_nc_ohc=gvBXawwGQ_kQ7kNvwHkCVHr&_nc_gid=13e99oEmmjM7gYpMP0mVrg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfV6dEEGYK8plrEvQD57pXNYzbKKEuqtX0XlTkMwIbWdKw&oe=68982534&_nc_sid=7a9f4b",
-    avatarFallback: "RF",
+    text: "Super profissional, super atencioso, conhece muito, super indico/recomendo.",
+    author: "Roberto Raposo de Medeiros",
+    avatarSrc: "https://lh3.googleusercontent.com/a/ACg8ocKrsPx4zx-25GHcLvcNOa52Cx32v-ziT2rksTh8Gg616KRUiw=w72-h72-p-rp-mo-ba3-br100",
+    avatarFallback: "R",
     rating: 5,
   },
 ];

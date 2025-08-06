@@ -47,7 +47,7 @@ export default function ProductCard ({ item }: ProductCardProps) {
         <div className={`left-1/2 top-0 w-[150px] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2 opacity-70 bg-linear-to-r ${isPinkViolet ? pinkViolet : orangeYellow}`} />
         <div className="flex flex-col gap-6 p-6">
           <div className="flex flex-col gap-2">
-            <FaGavel className="text-2xl" />
+            <FaGavel className="text-2xl text-white" />
             <h3 className={`text-2xl font-semibold bg-linear-to-r ${isPinkViolet ? pinkViolet : orangeYellow} bg-clip-text text-transparent group-hover:text-white`}>
               {item.data.title}
             </h3>
@@ -56,7 +56,7 @@ export default function ProductCard ({ item }: ProductCardProps) {
             {item.data.description}
           </p>
           <div>
-            <span className="group-hover:text-white">Benefícios:</span>
+            <span className="text-white dark:text-foreground group-hover:text-white">Benefícios:</span>
             <ul className="list-inside list-disc text-gray-300 group-hover:text-gray-100">
               {item.data.benefits.map(benefit => (
                 <li key={benefit}>
