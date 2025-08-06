@@ -49,7 +49,7 @@ SectionFadeInUp.displayName = "SectionFadeInUp";
 type DivProps = CustomProps & HTMLMotionProps<"div">;
 
 const DivFadeInUpComponent = (
-  { children, duration = 1, delay = 0, amount = 'all', ...rest }: DivProps,
+  { children, duration = 1, delay = 0, amount = 0, ...rest }: DivProps,
   ref: ForwardedRef<HTMLDivElement>
 ) => {
   return (

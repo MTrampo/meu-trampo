@@ -149,7 +149,7 @@ export const ParagraphFadeInLeft = forwardRef<HTMLParagraphElement, ParagraphPro
             },
           },
         }}
-        viewport={{ once: true, amount: 'all' }}
+        viewport={{ once: true, amount: 0 }}
         {...rest}
       >
         {children}
