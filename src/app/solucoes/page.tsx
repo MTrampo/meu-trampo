@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import { cases } from '@/commons/data/showcase'
 import { DivFadeInUp } from '@/components/motion/container';
 import ShowCaseCard from "@/components/showcase/showcase-card";
+
+export const metadata: Metadata = {
+  title: 'Soluções Digitais | Meu Trampo', 
+  description: 'Conheça a Forja de Soluções do Meu Trampo. Especialistas em desenvolvimento web sob medida e sistemas inteligentes para otimizar o seu negócio.',
+  keywords: ['soluções digitais', 'desenvolvimento web', 'criação de arte', 'criação de flyer', 'cartão de visitas', 'sistemas inteligentes', 'otimização de negócios', 'tecnologia personalizada', 'inovação tecnológica', 'transformação digital', 'serviços de TI', 'consultoria tecnológica', 'automação de processos'],
+};
 
 export default function ShowCase() {
   return (
