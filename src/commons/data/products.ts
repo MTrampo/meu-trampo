@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     link: {
       isInternalLink: false,
-      href: '/showcase'
+      href: '/solucoes'
     },
     data: {
       title: 'Forja de Soluções',
@@ -16,7 +16,7 @@ export const products = [
     id: 2,
     link: {
       isInternalLink: true,
-      href: '/core'
+      href: '/nucleo'
     },
     data: {
       title: 'Núcleo de Potência',
